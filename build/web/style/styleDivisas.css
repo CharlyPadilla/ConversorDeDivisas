@@ -1,0 +1,123 @@
+
+/* 
+    Creado el : 20 sept 2023, 09:13:55
+    Author     : Carlos Padilla Torres
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.barra {
+    height: 6.5em;
+    border-bottom: 1em;
+}
+
+.logo {
+    height: 5em;
+    width: 9.5em;
+}
+
+/* Estilo para el contenedor principal */
+.contenedorPrincipal´ {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el contenido de texto */
+}
+
+/* Estilo para el título */
+.contenedorTitulo {
+    align-content: center;
+    text-align: center;
+    background-color: #f2f2f2; /* Color de fondo del título */
+    padding: 20px; /* Espacio interno del título */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
+}
+
+/* Estilo para el contenedor con borde redondeado */
+.contenedorSecundario {
+    margin: auto;
+    width: 89%;
+    height: 17em;
+    background-color: #ffcccc; /* Color de fondo del contenedor */
+    padding: 20px; /* Espacio interno del contenedor */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados abajo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.contenedorTerciario {
+    display: flex;
+    flex-direction: row; /* Establece la dirección de los elementos en fila (horizontal) */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    margin: auto;
+    width: 89%;
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+
+.resultado {
+}
+
+.importe {
+    margin: .8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: block;
+}
+
+#inputImporte {
+    margin: .2em;
+    border-radius: .5em;
+    box-shadow: 0.5em;
+    width: 8em;
+    height: 2.5em;
+}
+
+.contendorDivisa1,contenedorDivisa2 {
+    margin: .8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: block;
+}
+
+
+
+.botonConvertir {
+    margin-left: 60em; 
+    background-color: #0dcaf0;
+    font-family: fantasy;
+    border-radius: .3em;
+    box-shadow: .5em;
+    width: 6em;
+}
+
+/* Elemento | http://localhost:8080/DSM406_ConversorDivisas/ */
+
+div.resultado:nth-child(7) {
+    font-style: normal;
+    letter-spacing: 0.057em;
+    font-size: 20px;
+}
+
+#divisaUno,#divisaDos {
+font-size: 23px;
+}
+
+/* Elemento | http://localhost:8080/DSM406_ConversorDivisas/ */
+
+select {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Elemento | http://localhost:8080/DSM406_ConversorDivisas/ */
+
+.importe {
+    font-size: 18px;
+    letter-spacing: 0.002em;
+    font-weight: 600;
+}

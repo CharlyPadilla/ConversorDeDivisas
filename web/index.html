@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Carlos Padilla Torres DSM406
+Miércoles 20 de septiembre 2023
+-->
+<html>
+    <head>
+        <title>ConversorMoneda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="CarlosPadilla">
+        <meta name="date" content="Septiembre 20 del 2023">
+        <link href="style/styleDivisas.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </head>
+    <body>
+
+        <nav class="barra fixed-top navbar navbar-expand-sm bg-dark navbar-dark mx-0 pt-2 shadow-lg">
+
+            <img src="images/logo.png" alt="Logo" class='logo'/>
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Inicio</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Información</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav><br><br><br><br>
+
+        <div class="contenedorPrincipal">
+
+           <div class="contenedorTitulo">
+                <h1 id="titulo">Conversor de Divisas</h1> 
+            </div> 
+
+            <div class="contenedorSecundario">
+                <div class="contenedorTerciario">
+                    <div class="importe">
+                        <a>Importe:</a><br> 
+                        <input type="text" id="inputImporte"> 
+                    </div> 
+
+
+                    <div class="divisa1">
+                        <p>De:</p>
+                        <select id="divisaUno">
+                            <option value=1 data-img-src="images/banderaDolar.jpg">Dolar</option>
+                            <option value=0.94>Euro</option>
+                            <option value=0.82>Libra</option>
+                            <option value=148.28>Yen</option>
+                            <option value=350.02>Peso Argentino</option>
+                            <option value=17.03>Peso Mexicano</option>
+                        </select>
+                    </div>
+
+                    <div class="divisa2">
+                        <p>a</p>
+                        <select id="divisaDos">
+                            <option value=1>Dolar</option>
+                           <option value=0.94>Euro</option>
+                            <option value=0.82>Libra</option>
+                            <option value=148.28>Yen</option>
+                            <option value=350.02>Peso Argentino</option>
+                            <option value=17.03>Peso Mexicano</option>
+                        </select>
+                    </div>
+                </div> 
+
+                <br>
+                <div class="resultado">
+
+                    <h2 id="txtResultadoConversion">
+
+                    </h2>
+
+                    <div class="resultado">
+                        <button class="botonConvertir" onclick="convertir();" >Convertir</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="JavaScript/JS_Divisas.js" ></script>
+    </body>
+</html>
